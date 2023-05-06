@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>table_de_multiplication</name>
+	<name>tableaux_etudiants</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1683320980159</id>
+			<id>1683363382808</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
