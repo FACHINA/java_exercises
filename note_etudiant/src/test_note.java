@@ -9,7 +9,7 @@ public class test_note {
 		Scanner clavier = new Scanner(System.in);
 		
 		int effectif,note,i,n = 1,max,min;
-		String nom,nom_faible = "",nom_fort = "";
+		String nom,nom_faible,nom_fort;
 		
 		System.out.println("Entrer l'effectif de la classe");
 		effectif = clavier.nextInt();
@@ -47,7 +47,10 @@ public class test_note {
 		min = tableau_note[0];
 		max = tableau_note[0];
 		
-		for(i = 0; i < effectif ; i++){
+		nom_faible = tableau_nom[0];
+		nom_fort = tableau_nom[0];
+
+		for(i = 1; i < effectif ; i++){
 			
 			note = tableau_note[i];
 			nom = tableau_nom[i];
