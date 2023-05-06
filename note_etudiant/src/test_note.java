@@ -8,8 +8,8 @@ public class test_note {
 		// TODO Auto-generated method stub
 		Scanner clavier = new Scanner(System.in);
 		
-		int effectif,note,i,n = 1;
-		String nom;
+		int effectif,note,i,n = 1,max,min;
+		String nom,nom_faible = "",nom_fort = "";
 		
 		System.out.println("Entrer l'effectif de la classe");
 		effectif = clavier.nextInt();
@@ -44,12 +44,28 @@ public class test_note {
 			
 		}
 		
+		min = tableau_note[0];
+		max = tableau_note[0];
+		
 		for(i = 0; i < effectif ; i++){
 			
-			nom = tableau_nom[i];
 			note = tableau_note[i];
+			nom = tableau_nom[i];
+			
+			if(note > max){
+				max = note;
+				nom_fort = nom;
+			}
+			
+			if(note < min ){
+				min = note;
+				nom_faible = nom;
+			}	
 			
 		}
+		
+		System.out.println("La plus forte note " + nom_fort + " : " + max);
+		System.out.println("La plus faible note " + nom_faible + " : " + min);
 		
 		
 
